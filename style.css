@@ -1,0 +1,97 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px;
+    width: 360px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+.search-box {
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.search-box input:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.4);
+}
+
+.search-box button {
+    padding: 12px 15px;
+    border: none;
+    background: #2980b9;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #1b6a91;
+    transform: translateY(-2px);
+}
+
+.weather-box h1 {
+    font-size: 55px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.weather-box img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Temperature glow effect */
+.weather-box h1 {
+    color: #2980b9;
+    text-shadow: 0 0 10px rgba(41, 128, 185, 0.4);
+}
